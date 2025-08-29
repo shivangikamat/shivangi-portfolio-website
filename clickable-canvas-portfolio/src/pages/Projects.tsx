@@ -78,7 +78,7 @@ const Projects = () => {
   const projectIcons = [
     {
       label: "Project 1",
-      src: "/lovable-uploads/project-icons/vscode.svg",
+      src: "/images/project-icons/vscode.svg",
       alt: "jumping_jack",
       position: { top: "11%", left: "19%" },
       width: "7%",
@@ -88,7 +88,7 @@ const Projects = () => {
     },
     {
       label: "Project 2",
-      src: "/lovable-uploads/project-icons/chrome.svg",
+      src: "/images/project-icons/chrome.svg",
       alt: "ny_academy",
       position: { top: "22%", left: "19%" },
       width: "7%",
@@ -98,7 +98,7 @@ const Projects = () => {
     },
     {
       label: "Project 3",
-      src: "/lovable-uploads/project-icons/gmail.svg",
+      src: "/images/project-icons/gmail.svg",
       alt: "sudoku_solver",
       position: { top: "33%", left: "19%" },
       width: "7%",
@@ -108,7 +108,7 @@ const Projects = () => {
     },
     {
       label: "Project 4",
-      src: "/lovable-uploads/project-icons/youtube.svg",
+      src: "/images/project-icons/youtube.svg",
       alt: "space_competition",
       position: { top: "44%", left: "19%" },
       width: "7%",
@@ -122,12 +122,12 @@ const Projects = () => {
     <FixedDesignScene backgroundColor="#A87E5E">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <Link to="/">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Room
-            </Button>
-          </Link>
+        <Link to="/" className="absolute top-4 left-4 z-[100]">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Room
+          </Button>
+        </Link>
 
           <div className="text-center">
               <h1 className="mb-4 heading-font">My Projects</h1>
@@ -144,7 +144,7 @@ const Projects = () => {
           <div className="relative flex justify-center mb-12 z-[10] top-[20%]">
             <div className="relative w-[85%]">
               <img 
-                src="/lovable-uploads/desktop.svg" 
+                src="/images/desktop.svg" 
                 alt="Projects Page"
                 className="w-full h-auto"
               />

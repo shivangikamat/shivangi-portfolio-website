@@ -44,12 +44,12 @@ const Blog = () => {
     <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Link to="/">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Room
-            </Button>
-          </Link>
+        <Link to="/" className="absolute top-4 left-4 z-[100]">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Room
+          </Button>
+        </Link>
 
           <div 
             className="absolute bottom-0 left-0 w-full" 
@@ -69,7 +69,7 @@ const Blog = () => {
             
             <div className="relative flex justify-center mb-12 z-[10]">
               <img 
-                src="/lovable-uploads/blog-page.svg" 
+                src="/images/blog-page.svg" 
                 alt="Blog Page"
                 className="w-full h-auto"
                 style={{
@@ -83,7 +83,7 @@ const Blog = () => {
                 {/* Row 1 */}
                 <PopupItem
                   label="Blog Post 1"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 1"
                   position={{ top: "30%", left: "20%", transform: true }}
                   width="20%"
@@ -98,7 +98,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 2"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 2"
                   position={{ top: "30%", left: "50%", transform: true }}
                   width="20%"
@@ -113,7 +113,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 3"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 3"
                   position={{ top: "30%", left: "80%", transform: true }}
                   width="20%"
@@ -129,7 +129,7 @@ const Blog = () => {
                 {/* Row 2 */}
                 <PopupItem
                   label="Blog Post 4"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 4"
                   position={{ top: "70%", left: "20%", transform: true }}
                   width="20%"
@@ -144,7 +144,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 5"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 5"
                   position={{ top: "70%", left: "50%", transform: true }}
                   width="20%"
@@ -159,7 +159,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 6"
-                  src="/lovable-uploads/blog-icon.svg"
+                  src="/images/blog-icon.svg"
                   alt="Blog Icon 6"
                   position={{ top: "70%", left: "80%", transform: true }}
                   width="20%"

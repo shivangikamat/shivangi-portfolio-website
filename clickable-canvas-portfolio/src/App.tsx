@@ -39,7 +39,7 @@ const AppRoutes = () => {
     </Routes>
   );
 
-  return isContactRoute ? routes : <CurtainLoader>{routes}</CurtainLoader>;
+  return true ? routes : <CurtainLoader>{routes}</CurtainLoader>;
 };
 
 const App = () => (

@@ -83,7 +83,7 @@ const BlogPopup: React.FC<BlogPopupProps> = ({
               
               {/* Right Side - Decorative Hearts */}
               <div className="flex space-x-1 ml-4">
-                <img src="/lovable-uploads/blog-hearts.svg" alt="Hearts" width={80} height={80} />
+                <img src="/images/blog-hearts.svg" alt="Hearts" width={80} height={80} />
               </div>
             </div>
             

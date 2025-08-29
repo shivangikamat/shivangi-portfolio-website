@@ -27,7 +27,7 @@ const RugPull = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img 
-                  src="/lovable-uploads/rug.svg" 
+                  src="/images/rug.svg" 
                   alt="Rug with hidden treasures"
                   className="w-full rounded-lg shadow-lg"
                 />

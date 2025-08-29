@@ -26,7 +26,7 @@ const TopClock: React.FC<TopClockProps> = ({ isDarkMode, toggleBackground, getRe
         title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
         <img
-          src="/lovable-uploads/clock.svg"
+          src="/images/clock.svg"
           alt="Clock"
           loading="lazy"
           className="w-full h-full object-contain select-none pointer-events-none drop-shadow-md"
