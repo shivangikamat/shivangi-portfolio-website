@@ -63,33 +63,33 @@ const Experience = () => {
   const layout = [
     {
       label: "Black Dress",
-      src: "/lovable-uploads/wardrobe/dress_black.svg",
+      src: "/images/wardrobe/dress_black.svg",
       alt: "Black Dress",
-      position: { top: "10%", left: "0" } as Position,
+      position: { top: "13%", left: "0" } as Position,
       width: "28%",
       height: "50%",
     },
     {
       label: "White Dress",
-      src: "/lovable-uploads/wardrobe/dress_white.svg",
+      src: "/images/wardrobe/dress_white.svg",
       alt: "White Dress",
-      position: { top: "13%", left: "11%" } as Position,
+      position: { top: "16%", left: "11%" } as Position,
       width: "28%",
       height: "50%",
     },
     {
       label: "Grey Coat",
-      src: "/lovable-uploads/wardrobe/coat_grey.svg",
+      src: "/images/wardrobe/coat_grey.svg",
       alt: "Grey Coat",
-      position: { top: "7%", right: "7.5%" } as Position,
+      position: { top: "10%", right: "7.5%" } as Position,
       width: "28%",
       height: "50%",
     },
     {
       label: "Blue Coat",
-      src: "/lovable-uploads/wardrobe/coat_blue.svg",
+      src: "/images/wardrobe/coat_blue.svg",
       alt: "Blue Coat",
-      position: { top: "9%", right: "-1%" } as Position,
+      position: { top: "12%", right: "-1%" } as Position,
       width: "25%",
       height: "50%",
     }
@@ -119,66 +119,65 @@ const Experience = () => {
 
   return (
     <FixedDesignScene backgroundColor="#F2C6B8" baseWidth={BASE_WIDTH} baseHeight={BASE_HEIGHT}>
-      <div className="container mx-auto px-4 py-8 relative">
-        <div className="max-w-6xl mx-auto">
-          <Link to="/" className="relative z-[100]">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Room
-            </Button>
-          </Link>
+      {/* Back button positioned absolutely */}
+      <Link to="/" className="absolute top-4 left-4 z-[100]">
+        <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Back to Room
+        </Button>
+      </Link>
 
-            <div className="text-center mt-10">
-              <h1 className="mb-4 heading-font">My Experience</h1>
-            </div>
+      {/* Title */}
+      <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-[100]">
+        <h1 className="heading-font text-center">My Experience</h1>
+      </div>
 
-          <div 
-            className="absolute bottom-0 left-0 w-full" 
-            style={{ 
-              backgroundColor: "#A46352",
-              height: "32%"
-            }} 
-          />
-            
-            {/* Main Wardrobe Image */}
-            <div className="relative flex justify-center mb-12 z-[10] top-[10%]">
-              <img 
-                src="/lovable-uploads/wardrobe.svg" 
-                alt="Wardrobe"
-                className="w-[50%] h-auto"
-              />
-              
-              {/* Clickable Coats and Dresses positioned over the wardrobe */}
-              <div className="absolute top-[10%] left-1/2 transform -translate-x-1/2 w-[50%] h-[80%]">
-                {layout.map((item, idx) => {
-                  const exp = experiences[idx];
-                  const title = exp ? exp.title : item.label;
-                  const description = buildDescription(exp);
-                  return (
-                    <PopupItem
-                      key={item.label}
-                      label={item.label}
-                      src={item.src}
-                      alt={item.alt}
-                      position={item.position}
-                      width={item.width}
-                      height={item.height}
-                      description={exp ? exp.title : undefined}
-                      onOpenPopup={() => openPopup({
-                        title,
-                        description,
-                        imageFolder: "wardrobe",
-                        imageAlt: item.alt
-                      })}
-                      zIndex={20}
-                      disabled={!exp}
-                    />
-                  );
+      {/* Floor mat */}
+      <div 
+        className="absolute bottom-0 left-0 w-full" 
+        style={{ 
+          backgroundColor: "#A46352",
+          height: "32%"
+        }} 
+      />
+        
+      {/* Main Wardrobe Image */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px]">
+        <img 
+          src="/images/wardrobe.svg" 
+          alt="Wardrobe"
+          className="w-full h-auto"
+        />
+        
+        {/* Clickable Coats and Dresses positioned over the wardrobe */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          {layout.map((item, idx) => {
+            const exp = experiences[idx];
+            const title = exp ? exp.title : item.label;
+            const description = buildDescription(exp);
+            return (
+              <PopupItem
+                key={item.label}
+                label={item.label}
+                src={item.src}
+                alt={item.alt}
+                position={item.position}
+                width={item.width}
+                height={item.height}
+                description={exp ? exp.title : undefined}
+                onOpenPopup={() => openPopup({
+                  title,
+                  description,
+                  imageFolder: "wardrobe",
+                  imageAlt: item.alt
                 })}
-              </div>
-            </div>
-          </div>
+                zIndex={20}
+                disabled={!exp}
+              />
+            );
+          })}
         </div>
+      </div>
       
       {/* Popup Component */}
       <Popup

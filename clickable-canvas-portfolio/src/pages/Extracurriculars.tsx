@@ -73,7 +73,7 @@ const Extracurriculars = () => {
     = {
     "Writing & Creative Work": {
       label: "Writing & Creative Work",
-      src: "/lovable-uploads/extracurricular_shelf/writing.svg",
+      src: "/images/extracurricular_shelf/writing.svg",
       alt: "Writing",
       position: { top: "27%", right: "6%", transform: true },
       width: "12%",
@@ -83,7 +83,7 @@ const Extracurriculars = () => {
     },
     "Chess": {
       label: "Chess",
-      src: "/lovable-uploads/extracurricular_shelf/chess.svg",
+      src: "/images/extracurricular_shelf/chess.svg",
       alt: "Chess",
       position: { top: "10%", left: "63%", transform: true },
       width: "12%",
@@ -93,7 +93,7 @@ const Extracurriculars = () => {
     },
     "Basketball": {
       label: "Basketball",
-      src: "/lovable-uploads/extracurricular_shelf/basketball.svg",
+      src: "/images/extracurricular_shelf/basketball.svg",
       alt: "Basketball",
       position: { top: "14%", left: "25.5%", transform: true },
       width: "12%",
@@ -103,7 +103,7 @@ const Extracurriculars = () => {
     },
     "Cooking": {
       label: "Cooking",
-      src: "/lovable-uploads/extracurricular_shelf/cooking.svg",
+      src: "/images/extracurricular_shelf/cooking.svg",
       alt: "Cooking",
       position: { bottom: "18%", right: "11%", transform: true },
       width: "12%",
@@ -113,7 +113,7 @@ const Extracurriculars = () => {
     },
     "Debate": {
       label: "Debate",
-      src: "/lovable-uploads/extracurricular_shelf/debate.svg",
+      src: "/images/extracurricular_shelf/debate.svg",
       alt: "Debate",
       position: { top: "29%", left: "17.5%", transform: true },
       width: "12%",
@@ -123,7 +123,7 @@ const Extracurriculars = () => {
     },
     "Crafts & Creativity": {
       label: "Crafts & Creativity",
-      src: "/lovable-uploads/extracurricular_shelf/crafts.svg",
+      src: "/images/extracurricular_shelf/crafts.svg",
       alt: "Crafts",
       position: { top: "45%", right: "6.5%", transform: true },
       width: "13%",
@@ -133,7 +133,7 @@ const Extracurriculars = () => {
     },
     "Travelling": {
       label: "Travel",
-      src: "/lovable-uploads/extracurricular_shelf/travel.svg",
+      src: "/images/extracurricular_shelf/travel.svg",
       alt: "Travel",
       position: { top: "25%", left: "46.5%", transform: true },
       width: "11%",
@@ -143,7 +143,7 @@ const Extracurriculars = () => {
     },
     "Hiking": {
       label: "Hiking",
-      src: "/lovable-uploads/extracurricular_shelf/hiking.svg",
+      src: "/images/extracurricular_shelf/hiking.svg",
       alt: "Hiking",
       position: { top: "47%", left: "57.5%", transform: true },
       width: "12%",
@@ -153,7 +153,7 @@ const Extracurriculars = () => {
     },
     "Leadership & Social Impact": {
       label: "Leadership & Social Impact",
-      src: "/lovable-uploads/extracurricular_shelf/company.svg",
+      src: "/images/extracurricular_shelf/company.svg",
       alt: "Leadership & Social Impact",
       position: { bottom: "32%", left: "19.5%", transform: true },
       width: "13%",
@@ -163,7 +163,7 @@ const Extracurriculars = () => {
     },
     "Achievements & Awards": {
       label: "Achievements & Awards",
-      src: "/lovable-uploads/extracurricular_shelf/trophy.svg",
+      src: "/images/extracurricular_shelf/trophy.svg",
       alt: "Achievements & Awards",
       position: { top: "67%", left: "38%", transform: true },
       width: "11%",
@@ -184,12 +184,12 @@ const Extracurriculars = () => {
     <FixedDesignScene backgroundColor="#5B4444">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <Link to="/">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Room
-            </Button>
-          </Link>
+        <Link to="/" className="absolute top-4 left-4 z-[100]">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Room
+          </Button>
+        </Link>
 
           <div className="text-center">
               <h1 className="mb-4 heading-font text-white">My Extracurriculars</h1>
@@ -198,7 +198,7 @@ const Extracurriculars = () => {
           <div className="relative flex justify-center mb-12 z-[10] top-[10%] w-full h-full">
             <div className="w-full h-[90%]">
               <img 
-                src="/lovable-uploads/shelf.svg" 
+                src="/images/shelf.svg" 
                 alt="Extracurriculars Page"
                 className="w-full h-[90%]"
               />

@@ -91,7 +91,7 @@ const CurtainLoader: React.FC<CurtainLoaderProps> = ({
             isLoading ? 'animate-[curtainOpen_3s_ease-in-out_forwards]' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: 'url(/lovable-uploads/curtains/left.svg)',
+            backgroundImage: 'url(/images/curtains/left.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transformOrigin: 'left center',
@@ -108,7 +108,7 @@ const CurtainLoader: React.FC<CurtainLoaderProps> = ({
             isLoading ? 'animate-[curtainOpenRight_3s_ease-in-out_forwards]' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: 'url(/lovable-uploads/curtains/right.svg)',
+            backgroundImage: 'url(/images/curtains/right.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transformOrigin: 'right center',

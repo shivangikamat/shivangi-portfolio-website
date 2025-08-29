@@ -112,12 +112,12 @@ const Education = () => {
     <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Link to="/">
-            <Button variant="ghost" className="mb-6">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Room
-            </Button>
-          </Link>
+        <Link to="/" className="absolute top-4 left-4 z-[100]">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Room
+          </Button>
+        </Link>
           
           <div className="space-y-8 flex flex-col items-center justify-center">
             <div className="text-center">
@@ -126,7 +126,7 @@ const Education = () => {
             <div className="relative flex justify-center mb-12 z-[10] top-[2%] min-w-[65vw] min-h-[50vh] w-full h-full">
               <div className="w-full h-full relative">
                 <img 
-                  src="/lovable-uploads/open-book.svg" 
+                  src="/images/open-book.svg" 
                   alt="Education History"
                   className="w-full h-full"
                 />
@@ -141,7 +141,7 @@ const Education = () => {
                     <PopupItem
                       key={bookmark.label}
                       label={bookmark.label}
-                      src="/lovable-uploads/bookmark.svg"
+                      src="/images/bookmark.svg"
                       alt="Bookmark"
                       position={bookmark.position}
                       width={bookmark.width}

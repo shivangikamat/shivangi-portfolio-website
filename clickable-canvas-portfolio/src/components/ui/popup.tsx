@@ -14,83 +14,83 @@ interface PopupProps {
 // Predefined image mappings for different folders
 const IMAGE_FOLDERS: Record<string, string[]> = {
   extracurricular_shelf: [
-    "/lovable-uploads/extracurricular_shelf/writing.svg",
-    "/lovable-uploads/extracurricular_shelf/trophy.svg",
-    "/lovable-uploads/extracurricular_shelf/travel.svg",
-    "/lovable-uploads/extracurricular_shelf/hiking.svg",
-    "/lovable-uploads/extracurricular_shelf/debate.svg",
-    "/lovable-uploads/extracurricular_shelf/crafts.svg",
-    "/lovable-uploads/extracurricular_shelf/cooking.svg",
-    "/lovable-uploads/extracurricular_shelf/company.svg",
-    "/lovable-uploads/extracurricular_shelf/chess.svg",
-    "/lovable-uploads/extracurricular_shelf/basketball.svg"
+    "/images/extracurricular_shelf/writing.svg",
+    "/images/extracurricular_shelf/trophy.svg",
+    "/images/extracurricular_shelf/travel.svg",
+    "/images/extracurricular_shelf/hiking.svg",
+    "/images/extracurricular_shelf/debate.svg",
+    "/images/extracurricular_shelf/crafts.svg",
+    "/images/extracurricular_shelf/cooking.svg",
+    "/images/extracurricular_shelf/company.svg",
+    "/images/extracurricular_shelf/chess.svg",
+    "/images/extracurricular_shelf/basketball.svg"
   ],
   blog: [
-    "/lovable-uploads/blog-page.svg",
-    "/lovable-uploads/blog-icon.svg"
+    "/images/blog-page.svg",
+    "/images/blog-icon.svg"
   ],
   dummy: [
-    "/lovable-uploads/room_bg.svg",
-    "/lovable-uploads/clock.svg",
-    "/lovable-uploads/rug.svg",
-    "/lovable-uploads/chair.svg",
-    "/lovable-uploads/coat_hanger.svg"
+    "/images/room_bg.svg",
+    "/images/clock.svg",
+    "/images/rug.svg",
+    "/images/chair.svg",
+    "/images/coat_hanger.svg"
   ],
   // Extracurriculars galleries
   basketball: [
-    "/lovable-uploads/extracurriculars/basketball/IMG_0502%20(1).jpeg",
-    "/lovable-uploads/extracurriculars/basketball/IMG_1017.jpeg",
-    "/lovable-uploads/extracurriculars/basketball/IMG_1402.jpeg",
-    "/lovable-uploads/extracurriculars/basketball/IMG_20180810_094954.jpg"
+    "/images/extracurriculars/basketball/IMG_0502%20(1).jpeg",
+    "/images/extracurriculars/basketball/IMG_1017.jpeg",
+    "/images/extracurriculars/basketball/IMG_1402.jpeg",
+    "/images/extracurriculars/basketball/IMG_20180810_094954.jpg"
   ],
   debate: [
-    "/lovable-uploads/extracurriculars/debate/national%20camp.png"
+    "/images/extracurriculars/debate/national%20camp.png"
   ],
   chess: [
-    "/lovable-uploads/extracurriculars/chess/IMG_9528.jpeg"
+    "/images/extracurriculars/chess/IMG_9528.jpeg"
   ],
   leadership: [
-    "/lovable-uploads/extracurriculars/leadership/1.png",
-    "/lovable-uploads/extracurriculars/leadership/2.png",
-    "/lovable-uploads/extracurriculars/leadership/3.png",
-    "/lovable-uploads/extracurriculars/leadership/4.png",
-    "/lovable-uploads/extracurriculars/leadership/5.png"
+    "/images/extracurriculars/leadership/1.png",
+    "/images/extracurriculars/leadership/2.png",
+    "/images/extracurriculars/leadership/3.png",
+    "/images/extracurriculars/leadership/4.png",
+    "/images/extracurriculars/leadership/5.png"
   ],
   cooking: [
-    "/lovable-uploads/extracurriculars/cooking/1.png",
-    "/lovable-uploads/extracurriculars/cooking/2.png",
-    "/lovable-uploads/extracurriculars/cooking/3.png",
-    "/lovable-uploads/extracurriculars/cooking/4.png"
+    "/images/extracurriculars/cooking/1.png",
+    "/images/extracurriculars/cooking/2.png",
+    "/images/extracurriculars/cooking/3.png",
+    "/images/extracurriculars/cooking/4.png"
   ],
   crafts: [
-    "/lovable-uploads/extracurriculars/crafts/1.png",
-    "/lovable-uploads/extracurriculars/crafts/2.png",
-    "/lovable-uploads/extracurriculars/crafts/3.png"
+    "/images/extracurriculars/crafts/1.png",
+    "/images/extracurriculars/crafts/2.png",
+    "/images/extracurriculars/crafts/3.png"
   ],
   hiking: [
-    "/lovable-uploads/extracurriculars/hiking/IMG_8931%20(1).jpeg"
+    "/images/extracurriculars/hiking/IMG_8931%20(1).jpeg"
   ],
   travelling: [
-    "/lovable-uploads/extracurriculars/travelling/1.png",
-    "/lovable-uploads/extracurriculars/travelling/2.png",
-    "/lovable-uploads/extracurriculars/travelling/3.png",
-    "/lovable-uploads/extracurriculars/travelling/4.png"
+    "/images/extracurriculars/travelling/1.png",
+    "/images/extracurriculars/travelling/2.png",
+    "/images/extracurriculars/travelling/3.png",
+    "/images/extracurriculars/travelling/4.png"
   ],
   awards: [
-    "/lovable-uploads/extracurriculars/awards/edinburgh%20award.png"
+    "/images/extracurriculars/awards/edinburgh%20award.png"
   ],
   writing: [],
   jumping_jack: [
-    "/lovable-uploads/projects/jumpingjack/1.png",
-    "/lovable-uploads/projects/jumpingjack/2.png",
+    "/images/projects/jumpingjack/1.png",
+    "/images/projects/jumpingjack/2.png",
   ],
   space_competition: [
-    "/lovable-uploads/projects/spacecompetition/Experiment.png",
-    "/lovable-uploads/projects/spacecompetition/teamSolaris.png",
+    "/images/projects/spacecompetition/Experiment.png",
+    "/images/projects/spacecompetition/teamSolaris.png",
   ],
   ny_academy: [
-    "/lovable-uploads/projects/NewYorkAcademyofSciences/1.png",
-    "/lovable-uploads/projects/NewYorkAcademyofSciences/2.png",
+    "/images/projects/NewYorkAcademyofSciences/1.png",
+    "/images/projects/NewYorkAcademyofSciences/2.png",
   ]
 };
 

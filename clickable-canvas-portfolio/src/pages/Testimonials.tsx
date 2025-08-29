@@ -11,42 +11,42 @@ const Testimonials = () => {
       role: "Bride",
       rating: 5,
       content: "I was so nervous about my wedding day look, but working with this amazing stylist completely transformed my confidence. The attention to detail was incredible, and I felt absolutely beautiful. My husband's reaction when he first saw me was priceless!",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     },
     {
       name: "Michael Chen",
       role: "Professional",
       rating: 5,
       content: "As someone who was always unsure about my style, the personal styling session was a game-changer. I now have a wardrobe that makes me feel confident and professional. The ongoing coaching has helped me maintain this new sense of style.",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     },
     {
       name: "Emily Rodriguez",
       role: "Event Planner",
       rating: 5,
       content: "I've worked with many stylists for corporate events, but this one stands out for their professionalism and creativity. They transformed our entire team's look for a major presentation, and the feedback was overwhelmingly positive.",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     },
     {
       name: "David Thompson",
       role: "Actor",
       rating: 5,
       content: "For my headshot session, I needed to look my absolute best. The makeup and styling were flawless, and the photographer was amazed at how camera-ready I was. The session was comfortable and professional throughout.",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     },
     {
       name: "Lisa Park",
       role: "Fashion Blogger",
       rating: 5,
       content: "I've collaborated with many beauty professionals, but this stylist's attention to detail and understanding of current trends is unmatched. They helped me create content that resonated with my audience and boosted my engagement significantly.",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     },
     {
       name: "Jennifer Williams",
       role: "Real Estate Agent",
       rating: 5,
       content: "In my line of work, first impressions are everything. The styling consultation helped me develop a professional yet approachable look that has definitely contributed to my success. I feel more confident in every client meeting.",
-      image: "/lovable-uploads/placeholder.svg"
+      image: "/images/placeholder.svg"
     }
   ];
 

@@ -24,16 +24,16 @@ const MakeoverRoom: React.FC = () => {
     : "#A46352";
 
   const windowImage = isDarkMode 
-    ? "/lovable-uploads/window_dark.svg" 
-    : "/lovable-uploads/window.svg";
+    ? "/images/window_dark.svg" 
+    : "/images/window.svg";
 
   const chandelierImage = isDarkMode 
-    ? "/lovable-uploads/chandelier_dark.svg" 
-    : "/lovable-uploads/chandelier.svg";
+    ? "/images/chandelier_dark.svg" 
+    : "/images/chandelier.svg";
 
   const topLightImage = isDarkMode 
-    ? "/lovable-uploads/top_light_dark.svg" 
-    : "/lovable-uploads/top_light.svg";
+    ? "/images/top_light_dark.svg" 
+    : "/images/top_light.svg";
 
   // Let the scene scale uniformly. Keep base percentages unchanged.
   const getResponsiveSize = (baseSize: string) => baseSize;
@@ -151,7 +151,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="About Me"
         description="Learn more about my story and approach."
-        src="/lovable-uploads/vanity_div.svg"
+        src="/images/vanity_div.svg"
         alt="Vanity with ornate mirror"
         position={{ top: "27%", left: "0" }}
         width={getResponsiveSize("23%")}
@@ -164,7 +164,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Wardrobe Essentials"
         description="Discover the foundation pieces for your perfect wardrobe"
-        src="/lovable-uploads/coat_hanger.svg"
+        src="/images/coat_hanger.svg"
         alt="Coat hanger"
         position={{ top: "30%", left: "25%" }}
         width={getResponsiveSize("8%")}
@@ -177,7 +177,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Gallery"
         description="Signature looks and transformations."
-        src="/lovable-uploads/center_mannequin.svg"
+        src="/images/center_mannequin.svg"
         alt="Pink layered gown on dress form"
         position={{ top: "52%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
@@ -197,7 +197,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Bouquet"
         description="bouquet"
-        src="/lovable-uploads/bouquet.svg"
+        src="/images/bouquet.svg"
         alt="Bouquet"
         position={{ top: "18%", left: "50%", transform: true }}
         width={getResponsiveSize("6%")}
@@ -211,7 +211,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Projects"
         description="Recent collaborations and highlights."
-        src="/lovable-uploads/side_mannequins.svg"
+        src="/images/side_mannequins.svg"
         alt="Two mannequins with gowns"
         position={{ top: "28%", right: "0" }}
         width={getResponsiveSize("25%")}
@@ -224,7 +224,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Services"
         description="Styling, makeup and consultations."
-        src="/lovable-uploads/cabinet.svg"
+        src="/images/cabinet.svg"
         alt="Shelf with jewelry, handbag and heels"
         position={{ top: "27%", right: "23%" }}
         width={getResponsiveSize("9%")}
@@ -237,7 +237,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Contact"
         description="Get in touch for bookings and quotes."
-        src="/lovable-uploads/sofa.svg"
+        src="/images/sofa.svg"
         alt="Sofa with table, flowers, gifts and heels"
         position={{ top: "50%", right: "0" }}
         width={getResponsiveSize("28%")}
@@ -250,7 +250,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Testimonials"
         description="Kind words from clients."
-        src="/lovable-uploads/chair.svg"
+        src="/images/chair.svg"
         alt="Sofa corner with cushion"
         position={{ top: "67%", left: "0" }}
         width={getResponsiveSize("13%")}
@@ -263,7 +263,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Reveal Treasures"
         description="Discover hidden gems and exclusive offers"
-        src="/lovable-uploads/rug.svg"
+        src="/images/rug.svg"
         alt="Rug with hidden treasures"
         position={{ top: "91%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
