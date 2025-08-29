@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Application Development Intern, Morgan Stanley (UK)",
+    "content": "Worked on large-scale data migration and simulation projects within the equities technology team. Developed Java-based ETL pipelines to transfer 10B+ equity swap records into Snowflake, improving speed by 20%. Engineered secure connections between on-prem systems and Snowflake, reducing infrastructure load by 15%. Implemented a stochastic trading simulation model to mimic market volatility for more realistic analysis.",
+    "date": "June – August 2025"
+  },
+  {
+    "title": "Informatics Course Tutor, University of Edinburgh (UK)",
+    "content": "Tutored 80+ first-year students in functional programming. Designed and delivered tutorials on recursion, higher-order functions, lazy evaluation, monads, and type systems. Ran coding challenges in Haskell that boosted average performance by 15%. Evaluated and provided feedback on 100+ assignments, helping students write efficient and idiomatic functional code.",
+    "date": "September 2024 – May 2025"
+  },
+  {
+    "title": "Website Migration Intern, University of Edinburgh (UK)",
+    "content": "Migrated 100+ official university websites to EdWeb2 (Drupal CMS). Built and restructured web pages, fixed JavaScript errors, and debugged HTML inconsistencies. Conducted QA testing for content accuracy, layout consistency, and accessibility compliance. Improved digital experience for 4.5M annual users by ensuring usability and reliability.",
+    "date": "May – December 2024"
+  },
+  {
+    "title": "Spring Insight Programs – Maven Securities, Blackstone, SIG, Morgan Stanley (UK)",
+    "content": "Participated in multi-day programs exploring careers in investment management, quantitative trading, and technology in finance. Engaged in high-intensity workshops, live trading simulations, and risk management exercises. Learned about proprietary trading methodologies and the role of technology in modern markets.",
+    "date": "2024–2025"
+  }
+]

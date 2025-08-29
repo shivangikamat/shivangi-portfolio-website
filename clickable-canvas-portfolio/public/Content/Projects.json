@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Jumping Jack – Online Game (Python)",
+    "content": "Developed a 2D obstacle-based game in Python where players control a character that must jump and navigate hazards to reach the top of the screen. Implemented smooth character controls and custom game logic with progressively challenging obstacles such as ghosts, demons, and lava. Strengthened skills in Python game development, event-driven programming, and game logic design.",
+    "date": "June 2023"
+  },
+  {
+    "title": "Global STEM Alliance, New York Academy of Sciences",
+    "content": "Selected as one of 1,000 students worldwide to join the Global STEM Alliance, a program bringing together young innovators to tackle global challenges. Designed and implemented an AI-driven forest management system to optimize resource utilization and promote sustainable forestry practices. Combined interests in AI and sustainability while collaborating within a global community of aspiring scientists and technologists.",
+    "date": "July 2022"
+  },
+  {
+    "title": "Sudoku Solver (Haskell)",
+    "content": "Built a functional programming-based Sudoku solver in Haskell capable of efficiently handling puzzles of varying complexity. Leveraged recursion, higher-order functions, and immutability to model puzzle states. Applied constraint satisfaction techniques and a backtracking algorithm to systematically explore solutions and prune invalid paths. Deepened understanding of functional programming paradigms and algorithmic problem-solving.",
+    "date": "December 2023"
+  },
+  {
+    "title": "International Space Competition (ISC), CERN",
+    "content": "Captained Team Solaris in the International Space Competition. Authored a 15-page report analyzing the properties of materials aboard the ISS. Conducted experiments with RFX1 and Graphene to study their behavior in space-like conditions. Produced a 10-minute video presentation explaining the project methodology and findings.",
+    "date": "2021"
+  }
+]
