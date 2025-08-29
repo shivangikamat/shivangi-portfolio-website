@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+
+
+@layer base {
+  :root {
+
+    --font-sans: 'Inter', sans-serif;
+    --background: 15 58% 98%;
+    --foreground: 336 43% 14%;
+
+    --card: 15 58% 98%;
+    --card-foreground: 336 43% 14%;
+
+    --popover: 15 58% 98%;
+    --popover-foreground: 336 43% 14%;
+
+    --primary: 340 75% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 12 70% 95%;
+    --secondary-foreground: 340 75% 22%;
+
+    --muted: 12 30% 94%;
+    --muted-foreground: 336 24% 40%;
+
+    --accent: 350 85% 92%;
+    --accent-foreground: 336 43% 14%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 350 30% 90%;
+    --input: 350 30% 90%;
+    --ring: 340 75% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 12 70% 97%;
+    --sidebar-foreground: 336 43% 20%;
+    --sidebar-primary: 340 75% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 350 85% 92%;
+    --sidebar-accent-foreground: 336 43% 20%;
+    --sidebar-border: 350 30% 90%;
+    --sidebar-ring: 340 75% 55%;
+
+    --colour-primary: #F9B5B5;
+  }
+
+  .dark {
+    --background: 330 25% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 330 25% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 330 25% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 340 85% 70%;
+    --primary-foreground: 330 25% 12%;
+
+    --secondary: 330 20% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 330 20% 18%;
+    --muted-foreground: 330 20% 70%;
+
+    --accent: 340 45% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 330 20% 20%;
+    --input: 330 20% 20%;
+    --ring: 340 85% 70%;
+
+    --sidebar-background: 330 20% 14%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 340 85% 70%;
+    --sidebar-primary-foreground: 330 25% 12%;
+    --sidebar-accent: 340 45% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 330 20% 20%;
+    --sidebar-ring: 340 85% 70%;
+  }
+
+  .heading-font {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .tooltip-font {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body { 
+    @apply bg-background text-foreground;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  }
+  
+  /* Apply Inter to all text elements */
+  *, *::before, *::after {
+    font-family: inherit;
+  }
+  
+  /* Ensure headings also use Inter (except for the special heading-font class) */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary { background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent))); }
+  .shadow-elegant { box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.35); }
+  .glass { background-color: hsl(var(--card) / 0.6); backdrop-filter: blur(12px); border: 1px solid hsl(var(--border)); }
+}
