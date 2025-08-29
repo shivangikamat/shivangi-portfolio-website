@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ClickableItem from "@/components/ClickableItem";
 import Notification from "@/components/ui/notification";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const MakeoverRoom: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
-  const [scale, setScale] = useState(1);
 
   // Base design resolution (keeps relative layout consistent)
   const BASE_WIDTH = 1670;
@@ -14,20 +13,6 @@ const MakeoverRoom: React.FC = () => {
   const toggleBackground = () => {
     setIsDarkMode(!isDarkMode);
   };
-
-  // Update viewport height on resize
-  useEffect(() => {
-    const handleResize = () => {
-      setViewportHeight(window.innerHeight);
-      const s = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
-      setScale(s);
-    };
-
-    window.addEventListener('resize', handleResize);
-    // initialize once
-    handleResize();
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   const backgroundColor = isDarkMode 
     ? "#946355" 
@@ -53,31 +38,12 @@ const MakeoverRoom: React.FC = () => {
   const getResponsiveSize = (baseSize: string) => baseSize;
 
   return (
-    <div
-      className="relative w-full min-h-[100vh] mx-auto overflow-hidden"
-      style={{
-        backgroundColor: backgroundColor,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        height: `${viewportHeight}px`,
-      }}
+    <FixedDesignScene
+      backgroundColor={backgroundColor}
+      baseWidth={BASE_WIDTH}
+      baseHeight={BASE_HEIGHT}
       aria-label="Interactive makeover room backdrop"
     >
-
-      {/* Fixed-design scene wrapper that scales uniformly */}
-      <div
-        className="relative"
-        style={{
-          width: `${BASE_WIDTH}px`,
-          height: `${BASE_HEIGHT}px`,
-          position: "absolute",
-          top: 0,
-          left: "50%",
-          transform: `translateX(-50%) scale(${scale})`,
-          transformOrigin: "top center",
-        }}
-      >
 
       <div 
         className="absolute bottom-0 left-0 w-full" 
@@ -327,14 +293,13 @@ const MakeoverRoom: React.FC = () => {
         showPageTooltip={true}
       />
 
-      </div>
-
        {/* Notification */}
        <Notification 
         elementToClick="different attractions" 
         contentToView="my life"
       />
-    </div>
+
+      </FixedDesignScene>
   );
 };
 

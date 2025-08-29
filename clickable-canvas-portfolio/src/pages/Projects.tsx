@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Projects = () => {
   const [popupData, setPopupData] = useState<{
@@ -118,7 +119,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#A87E5E]">
+    <FixedDesignScene backgroundColor="#A87E5E">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <Link to="/">
@@ -197,7 +198,7 @@ const Projects = () => {
         elementToClick="desktop icons" 
         contentToView="detailed project information"
       />
-    </div>
+    </FixedDesignScene>
   );
 };
 
