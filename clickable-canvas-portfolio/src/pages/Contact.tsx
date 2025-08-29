@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <Link to="/">
@@ -137,7 +138,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </FixedDesignScene>
   );
 };
 

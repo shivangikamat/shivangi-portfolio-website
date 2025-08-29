@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Star, Quote } from "lucide-react";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Testimonials = () => {
   const testimonials = [
@@ -59,7 +60,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <Link to="/">
@@ -131,7 +132,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </FixedDesignScene>
   );
 };
 

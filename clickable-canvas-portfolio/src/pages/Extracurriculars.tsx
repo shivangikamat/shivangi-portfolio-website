@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Extracurriculars = () => {
   const [popupData, setPopupData] = useState<{
@@ -180,7 +181,7 @@ const Extracurriculars = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#5B4444]">
+    <FixedDesignScene backgroundColor="#5B4444">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <Link to="/">
@@ -249,7 +250,7 @@ const Extracurriculars = () => {
         elementToClick="shelf items" 
         contentToView="extracurricular activities and achievements"
       />
-    </div>
+    </FixedDesignScene>
   );
 };
 

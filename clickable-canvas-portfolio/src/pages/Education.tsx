@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Education = () => {
   const [popupData, setPopupData] = useState<{
@@ -108,7 +109,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F2C6B8]">
+    <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <Link to="/">
@@ -179,7 +180,7 @@ const Education = () => {
         elementToClick="bookmarks" 
         contentToView="my education history"
       />
-    </div>
+    </FixedDesignScene>
   );
 };
 

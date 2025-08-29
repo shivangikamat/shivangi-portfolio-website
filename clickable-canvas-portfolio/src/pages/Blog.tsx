@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import PopupItem from "@/components/PopupItem";
 import BlogPopup from "@/components/ui/blog-popup";
+import FixedDesignScene from "@/components/FixedDesignScene";
 
 const Blog = () => {
   const [popupData, setPopupData] = useState<{
@@ -40,7 +41,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#F2C6B8]">
+    <FixedDesignScene backgroundColor="#F2C6B8">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <Link to="/">
@@ -186,7 +187,7 @@ const Blog = () => {
         date={popupData.date}
         readTime={popupData.readTime}
       />
-    </div>
+    </FixedDesignScene>
   );
 };
 
