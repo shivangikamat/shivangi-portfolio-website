@@ -3,6 +3,7 @@ import ClickableItem from "@/components/ClickableItem";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
 import TopClock from "@/components/TopClock";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const MakeoverRoom: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);

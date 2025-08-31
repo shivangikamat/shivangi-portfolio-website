@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import CurtainLoader from "@/components/ui/curtain-loader";
+import SVGPreloader from "@/components/SVGPreloader";
 import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import Experience from "./pages/Experience";
@@ -47,6 +48,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <SVGPreloader />
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
