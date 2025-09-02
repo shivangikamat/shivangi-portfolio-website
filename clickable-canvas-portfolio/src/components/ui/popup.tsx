@@ -38,13 +38,13 @@ const IMAGE_FOLDERS: Record<string, string[]> = {
   ],
   // Extracurriculars galleries
   basketball: [
-    "/images/extracurriculars/basketball/IMG_0502%20(1).jpeg",
+    "/images/extracurriculars/basketball/garden.jpeg",
     "/images/extracurriculars/basketball/IMG_1017.jpeg",
     "/images/extracurriculars/basketball/IMG_1402.jpeg",
     "/images/extracurriculars/basketball/IMG_20180810_094954.jpg"
   ],
   debate: [
-    "/images/extracurriculars/debate/national%20camp.png"
+    "/images/extracurriculars/debate/national_camp.png"
   ],
   chess: [
     "/images/extracurriculars/chess/IMG_9528.jpeg"
@@ -68,7 +68,7 @@ const IMAGE_FOLDERS: Record<string, string[]> = {
     "/images/extracurriculars/crafts/3.png"
   ],
   hiking: [
-    "/images/extracurriculars/hiking/IMG_8931%20(1).jpeg"
+    "/images/extracurriculars/hiking/hiking_1.jpeg"
   ],
   travelling: [
     "/images/extracurriculars/travelling/1.png",
@@ -77,7 +77,7 @@ const IMAGE_FOLDERS: Record<string, string[]> = {
     "/images/extracurriculars/travelling/4.png"
   ],
   awards: [
-    "/images/extracurriculars/awards/edinburgh%20award.png"
+    "/images/extracurriculars/awards/edinburgh_award.png"
   ],
   writing: [],
   jumping_jack: [
