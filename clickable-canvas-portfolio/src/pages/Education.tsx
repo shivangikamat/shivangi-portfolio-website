@@ -101,7 +101,7 @@ const Education = () => {
     },
     {
       label: "Education 4",
-      position: { top: "7%", right: "33%" },
+      position: { top: "6%", right: "35%" },
       width: "8%",
       height: "auto",
       zIndex: 20
@@ -128,7 +128,7 @@ const Education = () => {
                 <img 
                   src="/images/open-book.svg" 
                   alt="Education History"
-                  className="w-full h-full"
+                  className="w-[120%] h-auto"
                 />
                 
                 {/* Clickable bookmarks */}

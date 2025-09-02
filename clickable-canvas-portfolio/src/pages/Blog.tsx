@@ -71,7 +71,7 @@ const Blog = () => {
               <img 
                 src="/images/blog-page.svg" 
                 alt="Blog Page"
-                className="w-full h-auto"
+                className="w-[120%] h-auto max-w-[1000px]"
                 style={{
                   border: "5px solid white",
                   borderRadius: "28px"
