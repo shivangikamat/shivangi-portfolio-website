@@ -1,7 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-type Position = { top?: string; left?: string; right?: string; bottom?: string; transform?: boolean };
+type Position = { 
+  top?: string; 
+  left?: string; 
+  right?: string; 
+  bottom?: string; 
+  transform?: boolean;
+  topMobile?: string; // mobile-specific top position
+};
 
 interface ClickableItemProps {
   label: string;
@@ -48,14 +55,17 @@ const ClickableItem: React.FC<ClickableItemProps> = ({ label, src, alt, position
     <div
       className="absolute"
       style={{ 
-        top: position.top, 
+        top: position.topMobile ? position.topMobile : position.top, 
         left: position.left, 
         right: position.right, 
         bottom: position.bottom, 
         width, 
         height, 
         transform: position.transform ? "translate(-50%, -50%)" : "none",
-        zIndex: zIndex
+        zIndex: zIndex,
+        ...(position.topMobile && {
+          '--desktop-top': position.top
+        } as React.CSSProperties)
       }}
     >
       <button

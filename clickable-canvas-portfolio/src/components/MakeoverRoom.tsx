@@ -180,7 +180,7 @@ const MakeoverRoom: React.FC = () => {
         description="Signature looks and transformations."
         src="/images/center_mannequin.svg"
         alt="Pink layered gown on dress form"
-        position={{ top: "52%", left: "50%", transform: true }}
+        position={{ top: "52%", topMobile: "45%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
         height="max-content"
         route="/experience"

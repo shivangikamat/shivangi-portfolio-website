@@ -145,4 +145,11 @@ All colors MUST be HSL.
   .animate-shake {
     animation: shake 1.2s ease-in-out;
   }
+  
+  /* Responsive positioning for ClickableItem components */
+  @media (min-width: 768px) {
+    [style*="--desktop-top"] {
+      top: var(--desktop-top) !important;
+    }
+  }
 }
