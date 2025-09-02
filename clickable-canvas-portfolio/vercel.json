@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/images/(.*)",
+      "source": "/images/(.*).svg",
       "headers": [
         {
           "key": "Cache-Control",
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "source": "/(.*).svg",
+      "source": "/images/(.*).png",
       "headers": [
         {
           "key": "Cache-Control",
@@ -22,7 +22,59 @@
         },
         {
           "key": "Content-Type",
-          "value": "image/svg+xml"
+          "value": "image/png"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*).jpg",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*).jpeg",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*).gif",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "image/gif"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*).webp",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
         }
       ]
     }
@@ -32,5 +84,10 @@
       "source": "/images/:path*",
       "destination": "/images/:path*"
     }
-  ]
+  ],
+  "functions": {
+    "api/health": {
+      "maxDuration": 30
+    }
+  }
 }
