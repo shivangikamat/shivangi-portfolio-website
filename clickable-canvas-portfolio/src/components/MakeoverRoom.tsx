@@ -276,7 +276,7 @@ const MakeoverRoom: React.FC = () => {
 
        {/* Notification */}
        <Notification 
-        elementToClick="different attractions" 
+        elementToClick="different items" 
         contentToView="my life"
       />
 
