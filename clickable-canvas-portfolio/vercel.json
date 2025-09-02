@@ -84,10 +84,5 @@
       "source": "/images/:path*",
       "destination": "/images/:path*"
     }
-  ],
-  "functions": {
-    "api/health": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
