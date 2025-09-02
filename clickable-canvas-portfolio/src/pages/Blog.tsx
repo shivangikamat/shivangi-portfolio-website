@@ -18,7 +18,7 @@ const Blog = () => {
     isOpen: false,
     title: "",
     content: "",
-    author: "Ritvik Gupta",
+    author: "Shivangi Kamat",
     date: "2024",
     readTime: "5 min read"
   });
