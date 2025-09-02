@@ -266,7 +266,7 @@ const MakeoverRoom: React.FC = () => {
         description="Discover hidden gems and exclusive offers"
         src="/images/rug.svg"
         alt="Rug with hidden treasures"
-        position={{ top: "91%", topMobile: "70%", left: "50%", transform: true }}
+        position={{ top: "91%", topMobile: "80%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
         height="max-content"
         route="/contact"
