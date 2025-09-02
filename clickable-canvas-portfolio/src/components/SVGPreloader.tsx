@@ -92,6 +92,8 @@ const SVGPreloader: React.FC = () => {
     '/images/extracurricular_shelf/writing.svg',
     '/images/curtains/left.svg',
     '/images/curtains/right.svg',
+    '/images/contact_page/telephone.svg',
+    '/images/contact_page/telebook.svg',
   ];
 
   return (

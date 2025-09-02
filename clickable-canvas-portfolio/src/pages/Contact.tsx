@@ -189,7 +189,7 @@ const Contact = () => {
 
       {/* Title */}
       <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-[100]">
-        <h1 className="heading-font text-center">Contact</h1>
+        <h1 className="text-8xl heading-font text-center">Contact</h1>
       </div>
 
       {/* Main Content Container */}
@@ -204,34 +204,34 @@ const Contact = () => {
           />
           
           {/* Contact Details Overlay on Telebook */}
-          <div className="absolute top-[25%] right-[23%] transform w-64 text-center">
+          <div className="absolute top-[20%] right-[17%] transform w-100 text-center">
             
             <div className="space-y-4">
               <div className="flex items-center justify-center space-x-3">
                 <Mail className="h-10 w-10 text-primary" />
                 <div>
-                  <p className="font-medium text-md">Email</p>
-                  <p className="text-muted-foreground text-md">kamatpr5@gmail.com</p>
+                  <p className="font-medium text-2xl">Email</p>
+                  <p className="text-muted-foreground text-2xl">kamatpr5@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-center justify-center space-x-3">
                 <User className="h-10 w-10 text-primary" />
                 <div>
-                  <p className="font-medium text-md">Name</p>
-                  <p className="text-muted-foreground text-md">Shivangi Kamat</p>
+                  <p className="font-medium text-2xl">Name</p>
+                  <p className="text-muted-foreground text-2xl">Shivangi Kamat</p>
                 </div>
               </div>
               
               <div className="flex items-center justify-center space-x-3">
                 <Linkedin className="h-10 w-10 text-primary" />
                 <div>
-                  <p className="font-medium text-md">LinkedIn</p>
+                  <p className="font-medium text-2xl">LinkedIn</p>
                   <a 
                     href="https://www.linkedin.com/in/shivangikamat/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline text-md"
+                    className="text-primary hover:underline text-2xl"
                   >
                     linkedin.com/in/shivangikamat
                   </a>
@@ -241,12 +241,12 @@ const Contact = () => {
               <div className="flex items-center justify-center space-x-3">
                 <Instagram className="h-10 w-10 text-primary" />
                 <div>
-                  <p className="font-medium text-md">Instagram</p>
+                  <p className="font-medium text-2xl">Instagram</p>
                   <a 
                     href="https://www.instagram.com/shivangi_kamat/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline text-md"
+                    className="text-primary hover:underline text-2xl"
                   >
                     @shivangi_kamat
                   </a>
@@ -275,7 +275,16 @@ const Contact = () => {
             <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-0 transition-opacity duration-200 rounded-lg flex items-center justify-center">
               <div className="text-center">
                 <Phone className="h-12 w-12 text-primary mx-auto mb-2" />
-                <p className="text-primary font-semibold">Click to Contact</p>
+                <p className="text-primary font-semibold">Click to Get in touch</p>
+              </div>
+            </div>
+
+            {/* Page Tooltip */}
+            <div className="absolute min-w-max w-[12vw] h-[5vh] -top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-5000">
+              <div className="tooltip-font flex items-center justify-center bg-white h-full text-black text-center px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap">
+                Get in touch
+                {/* Arrow pointing down */}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white"></div>
               </div>
             </div>
           </button>
