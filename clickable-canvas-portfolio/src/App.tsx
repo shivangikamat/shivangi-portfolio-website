@@ -15,6 +15,7 @@ import Testimonials from "./pages/Testimonials";
 import Education from "./pages/Education";
 import RugPull from "./pages/RugPull";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/next"
 import '@fontsource/inter';
 import '@fontsource/berkshire-swash';
 
@@ -48,6 +49,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Analytics />
       <SVGPreloader />
       <BrowserRouter>
         <AppRoutes />
