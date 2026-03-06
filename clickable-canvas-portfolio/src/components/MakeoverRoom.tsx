@@ -182,7 +182,7 @@ const MakeoverRoom: React.FC = () => {
         alt="Pink layered gown on dress form"
         position={{ top: "25%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height="max-content"
+        height={getResponsiveSize("5%")}
         route="/experience"
         zIndex={4}
         showPageTooltip={true}
