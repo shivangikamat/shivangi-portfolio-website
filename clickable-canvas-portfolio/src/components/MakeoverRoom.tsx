@@ -268,7 +268,7 @@ const MakeoverRoom: React.FC = () => {
         alt="Rug with hidden treasures"
         position={{ top: "83%", topMobile: "80%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height="max-content"
+        height={getResponsiveSize("4%")}
         route="/contact"
         zIndex={5}
         showPageTooltip={true}
