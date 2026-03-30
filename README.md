@@ -4,6 +4,8 @@ An interactive personal portfolio built with **React, TypeScript, and Vite**, de
 
 Instead of a traditional scrolling portfolio, the site creates a **playful, immersive interface** where each object in the room leads to a different section of my work.
 
+The elements of this site were designed by hand in figma to give a personal touch to the overall theme.
+
  **Live Website:**  
 https://www.shivangikamat.com
 
