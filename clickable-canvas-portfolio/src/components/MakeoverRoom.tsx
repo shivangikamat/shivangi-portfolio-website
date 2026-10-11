@@ -187,15 +187,15 @@ const MakeoverRoom: React.FC = () => {
         disabled={true}
       />
 
-        {/* Center dress (Gallery) */}
+        {/* Center dress (Gallery). The box height matches the artwork so the whole dress is clickable */}
       <ClickableItem
         label="Gallery"
         description="Signature looks and transformations."
         src={img("center_mannequin.webp")}
         alt="Pink layered gown on dress form"
-        position={{ top: "25%", left: "50%", transform: true }}
+        position={{ top: "52.6%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height={getResponsiveSize("5%")}
+        height={getResponsiveSize("60.2%")}
         route="/experience"
         zIndex={4}
         showPageTooltip={true}
@@ -279,9 +279,9 @@ const MakeoverRoom: React.FC = () => {
         description="Discover hidden gems and exclusive offers"
         src={img("rug.svg")}
         alt="Rug with hidden treasures"
-        position={{ top: "83%", topMobile: "80%", left: "50%", transform: true }}
+        position={{ top: "91.6%", topMobile: "88.6%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height={getResponsiveSize("4%")}
+        height={getResponsiveSize("16.4%")}
         route="/contact"
         zIndex={5}
         showPageTooltip={true}
