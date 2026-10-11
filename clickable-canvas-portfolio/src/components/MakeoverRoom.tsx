@@ -193,9 +193,9 @@ const MakeoverRoom: React.FC = () => {
         description="Signature looks and transformations."
         src={img("center_mannequin.webp")}
         alt="Pink layered gown on dress form"
-        position={{ top: "52%", left: "50%", transform: true }}
+        position={{ top: "25%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height="max-content"
+        height={getResponsiveSize("5%")}
         route="/experience"
         zIndex={4}
         showPageTooltip={true}
@@ -279,9 +279,9 @@ const MakeoverRoom: React.FC = () => {
         description="Discover hidden gems and exclusive offers"
         src={img("rug.svg")}
         alt="Rug with hidden treasures"
-        position={{ top: "91%", left: "50%", transform: true }}
+        position={{ top: "83%", topMobile: "80%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
-        height="max-content"
+        height={getResponsiveSize("4%")}
         route="/contact"
         zIndex={5}
         showPageTooltip={true}
