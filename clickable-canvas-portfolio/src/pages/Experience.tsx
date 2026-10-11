@@ -7,6 +7,7 @@ import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 
 const Experience = () => {
   const [scale, setScale] = useState(1);
@@ -120,9 +121,10 @@ const Experience = () => {
 
   return (
     <FixedDesignScene backgroundColor="#F2C6B8" baseWidth={BASE_WIDTH} baseHeight={BASE_HEIGHT}>
+      <RoomBackdrop floorColor="#A46352" />
       {/* Back button positioned absolutely */}
       <Link to="/" className="absolute top-4 left-4 z-[100]">
-        <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+        <Button variant="ghost" className="bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Room
         </Button>
@@ -133,15 +135,13 @@ const Experience = () => {
         <h1 className="heading-font text-center">My Experience</h1>
       </div>
 
-      {/* Floor mat */}
-      <div 
-        className="absolute bottom-0 left-0 w-full" 
-        style={{ 
-          backgroundColor: "#A46352",
-          height: "32%"
-        }} 
-      />
         
+      {/* Ground shadow under the wardrobe */}
+      <div
+        className="absolute rounded-[50%] pointer-events-none"
+        style={{ left: "50%", top: "86.6%", width: "52%", height: "3.4%", transform: "translate(-50%, -50%)", backgroundColor: "rgba(70,30,22,0.38)" }}
+      />
+
       {/* Main Wardrobe Image */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px]">
         <img 

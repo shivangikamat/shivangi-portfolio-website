@@ -7,6 +7,7 @@ import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 
 const Education = () => {
   const [popupData, setPopupData] = useState<{
@@ -111,10 +112,11 @@ const Education = () => {
 
   return (
     <FixedDesignScene backgroundColor="#F2C6B8">
+      <RoomBackdrop floorColor="#A46352" />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
         <Link to="/" className="absolute top-4 left-4 z-[100]">
-          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Room
           </Button>
@@ -130,6 +132,7 @@ const Education = () => {
                   src={img("open-book.webp")} 
                   alt="Education History"
                   className="w-[120%] h-auto"
+                  style={{ filter: "drop-shadow(0 18px 24px rgba(90,40,30,0.28))" }}
                 />
                 
                 {/* Clickable bookmarks */}

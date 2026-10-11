@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCircle, User, Linkedin, Instagram } from "lucide-react";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -154,9 +155,10 @@ const Contact = () => {
 
   return (
     <FixedDesignScene backgroundColor="#F2C6B8">
+      <RoomBackdrop floorColor="#A46352" />
       {/* Back button positioned absolutely */}
       <Link to="/" className="absolute top-4 left-4 z-[100]">
-        <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+        <Button variant="ghost" className="bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Room
         </Button>
@@ -202,6 +204,7 @@ const Contact = () => {
             src={img("contact_page/telebook.webp")} 
             alt="Telebook"
             className="w-full h-full object-contain"
+            style={{ filter: "drop-shadow(0 18px 24px rgba(90,40,30,0.25))" }}
           />
           
           {/* Contact Details Overlay on Telebook */}

@@ -7,6 +7,7 @@ import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 
 const Projects = () => {
   const [popupData, setPopupData] = useState<{
@@ -162,10 +163,11 @@ const Projects = () => {
 
   return (
     <FixedDesignScene backgroundColor="#A87E5E">
+      <RoomBackdrop floorColor="#75482B" skirtingColor="#E9D3BF" glowColor="rgba(255,240,220,0.22)" />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
         <Link to="/" className="absolute top-4 left-4 z-[100]">
-          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Room
           </Button>
@@ -175,13 +177,6 @@ const Projects = () => {
               <h1 className="mb-4 heading-font">My Projects</h1>
           </div>
 
-          <div 
-            className="absolute bottom-0 left-0 w-full" 
-            style={{ 
-              backgroundColor: "#75482B",
-              height: "32%"
-            }} 
-          />
 
           <div className="relative flex justify-center mb-12 z-[10] top-[20%]">
             <div className="relative w-[85%]">

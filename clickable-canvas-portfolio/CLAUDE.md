@@ -33,6 +33,7 @@ Every page is wrapped in `FixedDesignScene` (`src/components/FixedDesignScene.ts
 
 ### Scene building blocks
 
+- `RoomBackdrop` — the striped wallpaper, skirting board and shaded floor behind every scene, placed as the first child of `FixedDesignScene`. It renders at `z-index: -1` and extends past the canvas so wide screens have no bare side strips; pages pass their own floor/skirting/glow colours, and omitting `floorColor` gives a wall-only scene.
 - `ClickableItem` — an absolutely positioned image button that navigates to `route`. Decorative furniture uses the same component with `disabled={true}`. Its hover tooltip label comes from a hard-coded route→name map inside the component, which needs a new entry when a route is added.
 - `PopupItem` — same positioning model, but calls `onOpenPopup` instead of navigating. Used on the inner pages.
 - `MakeoverRoom` — the landing scene. Holds the `isDarkMode` state (toggled by `TopClock`), which swaps background colours and the `*_dark.svg` variants of window/chandelier/lights. This is local state, unrelated to the Tailwind `.dark` class or `next-themes`.

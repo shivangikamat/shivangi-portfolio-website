@@ -3,6 +3,7 @@ import { img, preloadImages } from "@/lib/images";
 import ClickableItem from "@/components/ClickableItem";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 import TopClock from "@/components/TopClock";
 import OptimizedImage from "@/components/OptimizedImage";
 
@@ -68,44 +69,10 @@ const MakeoverRoom: React.FC = () => {
       aria-label="Interactive makeover room backdrop"
     >
 
-      {/* Wallpaper: soft stripes with a glow around the window. Extends past the canvas so wide screens have no seam */}
-      <div
-        className="absolute top-0 pointer-events-none"
-        style={{
-          left: "-100%",
-          width: "300%",
-          height: "68%",
-          backgroundImage: [
-            `radial-gradient(ellipse 16% 75% at 50% 38%, ${wallGlow}, transparent 72%)`,
-            "repeating-linear-gradient(90deg, rgba(255,255,255,0.09) 0 36px, rgba(255,255,255,0) 36px 72px)",
-          ].join(", "),
-        }}
-      />
-
-      {/* Floor, shaded where it meets the wall and towards the front */}
-      <div 
-        className="absolute bottom-0 pointer-events-none" 
-        style={{ 
-          left: "-100%",
-          width: "300%",
-          backgroundColor: matColor,
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0.14), rgba(0,0,0,0) 16%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.14))",
-          height: getResponsiveSize("32%")
-        }} 
-      />
-
-      {/* Skirting board */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          left: "-100%",
-          width: "300%",
-          bottom: "32%",
-          height: "1.3%",
-          backgroundColor: skirtingColor,
-          boxShadow: "0 3px 6px rgba(0,0,0,0.18)",
-        }}
+      <RoomBackdrop
+        floorColor={matColor}
+        skirtingColor={skirtingColor}
+        glowColor={wallGlow}
       />
 
       {/* Ground shadows for the pieces that had none */}

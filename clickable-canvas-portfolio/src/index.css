@@ -100,6 +100,7 @@ All colors MUST be HSL.
     line-height: 1.2;
     letter-spacing: 0.05em;
     text-align: center;
+    text-shadow: 0 3px 10px rgba(60, 20, 20, 0.18);
   }
 
   .tooltip-font {

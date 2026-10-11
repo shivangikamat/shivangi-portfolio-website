@@ -7,6 +7,7 @@ import PopupItem from "@/components/PopupItem";
 import Popup from "@/components/ui/popup";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
+import RoomBackdrop from "@/components/RoomBackdrop";
 
 const Extracurriculars = () => {
   const [popupData, setPopupData] = useState<{
@@ -183,10 +184,11 @@ const Extracurriculars = () => {
 
   return (
     <FixedDesignScene backgroundColor="#5B4444">
+      <RoomBackdrop glowColor="rgba(255,220,210,0.12)" glowPosition="50% 45%" stripeOpacity={0.05} />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
         <Link to="/" className="absolute top-4 left-4 z-[100]">
-          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm">
+          <Button variant="ghost" className="bg-white/80 backdrop-blur-sm rounded-full shadow-md hover:bg-white">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Room
           </Button>
