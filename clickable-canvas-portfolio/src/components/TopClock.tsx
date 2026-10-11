@@ -1,4 +1,5 @@
 import React from "react";
+import { img } from "@/lib/images";
 
 interface TopClockProps {
   isDarkMode: boolean;
@@ -26,9 +27,9 @@ const TopClock: React.FC<TopClockProps> = ({ isDarkMode, toggleBackground, getRe
         title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
         <img
-          src="/images/clock.svg"
+          src={img("clock.svg")}
           alt="Clock"
-          loading="lazy"
+          decoding="async"
           className="w-full h-full object-contain select-none pointer-events-none drop-shadow-md"
         />
         <span className="sr-only">Toggle background theme</span>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -36,7 +37,7 @@ const Projects = () => {
     const load = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("/Content/Projects.json", { cache: "no-store" });
+        const res = await fetch("/Content/Projects.json");
         if (!res.ok) throw new Error(`Failed to load Projects.json: ${res.status}`);
         const data: ProjectEntry[] = await res.json();
         if (isMounted) setProjectEntries(Array.isArray(data) ? data : []);
@@ -75,42 +76,83 @@ const Projects = () => {
     return `${dateLine}${entry.content}`;
   };
 
+  // Order matches public/Content/Projects.json: newest projects in the first column
   const projectIcons = [
     {
       label: "Project 1",
-      src: "/images/project-icons/vscode.svg",
-      alt: "jumping_jack",
+      src: img("project-icons/docs.svg"),
+      alt: "lean_research",
       position: { top: "11%", left: "19%" },
+      width: "7%",
+      height: "auto",
+      zIndex: 20,
+      imageFolder: "",
+    },
+    {
+      label: "Project 2",
+      src: img("project-icons/jupyter.svg"),
+      alt: "pricing_algorithm",
+      position: { top: "22%", left: "19%" },
+      width: "7%",
+      height: "auto",
+      zIndex: 20,
+      imageFolder: "",
+    },
+    {
+      label: "Project 3",
+      src: img("project-icons/terminal.svg"),
+      alt: "citadel_terminal",
+      position: { top: "33%", left: "19%" },
+      width: "7%",
+      height: "auto",
+      zIndex: 20,
+      imageFolder: "",
+    },
+    {
+      label: "Project 4",
+      src: img("project-icons/pytorch.svg"),
+      alt: "strain",
+      position: { top: "44%", left: "19%" },
+      width: "7%",
+      height: "auto",
+      zIndex: 20,
+      imageFolder: "",
+    },
+    {
+      label: "Project 5",
+      src: img("project-icons/vscode.svg"),
+      alt: "jumping_jack",
+      position: { top: "11%", left: "29%" },
       width: "7%",
       height: "auto",
       zIndex: 20,
       imageFolder: "jumping_jack",
     },
     {
-      label: "Project 2",
-      src: "/images/project-icons/chrome.svg",
+      label: "Project 6",
+      src: img("project-icons/chrome.svg"),
       alt: "ny_academy",
-      position: { top: "22%", left: "19%" },
+      position: { top: "22%", left: "29%" },
       width: "7%",
       height: "auto",
       zIndex: 20,
       imageFolder: "ny_academy",
     },
     {
-      label: "Project 3",
-      src: "/images/project-icons/gmail.svg",
+      label: "Project 7",
+      src: img("project-icons/gmail.svg"),
       alt: "sudoku_solver",
-      position: { top: "33%", left: "19%" },
+      position: { top: "33%", left: "29%" },
       width: "7%",
       height: "auto",
       zIndex: 20,
       imageFolder: "sudoku_solver",
     },
     {
-      label: "Project 4",
-      src: "/images/project-icons/youtube.svg",
+      label: "Project 8",
+      src: img("project-icons/youtube.svg"),
       alt: "space_competition",
-      position: { top: "44%", left: "19%" },
+      position: { top: "44%", left: "29%" },
       width: "7%",
       height: "auto",
       zIndex: 20,
@@ -144,7 +186,7 @@ const Projects = () => {
           <div className="relative flex justify-center mb-12 z-[10] top-[20%]">
             <div className="relative w-[85%]">
               <img 
-                src="/images/desktop.svg" 
+                src={img("desktop.webp")} 
                 alt="Projects Page"
                 className="w-full h-auto"
               />

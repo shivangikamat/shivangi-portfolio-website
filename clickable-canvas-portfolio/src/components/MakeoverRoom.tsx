@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { img, preloadImages } from "@/lib/images";
 import ClickableItem from "@/components/ClickableItem";
 import Notification from "@/components/ui/notification";
 import FixedDesignScene from "@/components/FixedDesignScene";
@@ -11,6 +12,18 @@ const MakeoverRoom: React.FC = () => {
   // Base design resolution (keeps relative layout consistent)
   const BASE_WIDTH = 1670;
   const BASE_HEIGHT = 1000;
+
+  // Once the room is up, fetch the main artwork of the inner pages so they open instantly
+  useEffect(() => {
+    preloadImages([
+      "wardrobe.webp",
+      "open-book.webp",
+      "desktop.webp",
+      "shelf.webp",
+      "contact_page/telephone.webp",
+      "window_dark.webp",
+    ]);
+  }, []);
 
   const toggleBackground = () => {
     setIsDarkMode(!isDarkMode);
@@ -25,16 +38,16 @@ const MakeoverRoom: React.FC = () => {
     : "#A46352";
 
   const windowImage = isDarkMode 
-    ? "/images/window_dark.svg" 
-    : "/images/window.svg";
+    ? img("window_dark.webp") 
+    : img("window.svg");
 
   const chandelierImage = isDarkMode 
-    ? "/images/chandelier_dark.svg" 
-    : "/images/chandelier.svg";
+    ? img("chandelier_dark.svg") 
+    : img("chandelier.svg");
 
   const topLightImage = isDarkMode 
-    ? "/images/top_light_dark.svg" 
-    : "/images/top_light.svg";
+    ? img("top_light_dark.svg") 
+    : img("top_light.svg");
 
   // Let the scene scale uniformly. Keep base percentages unchanged.
   const getResponsiveSize = (baseSize: string) => baseSize;
@@ -152,7 +165,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="About Me"
         description="Learn more about my story and approach."
-        src="/images/vanity_div.svg"
+        src={img("vanity_div.webp")}
         alt="Vanity with ornate mirror"
         position={{ top: "27%", left: "0" }}
         width={getResponsiveSize("23%")}
@@ -165,7 +178,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Wardrobe Essentials"
         description="Discover the foundation pieces for your perfect wardrobe"
-        src="/images/coat_hanger.svg"
+        src={img("coat_hanger.webp")}
         alt="Coat hanger"
         position={{ top: "30%", left: "25%" }}
         width={getResponsiveSize("8%")}
@@ -178,9 +191,9 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Gallery"
         description="Signature looks and transformations."
-        src="/images/center_mannequin.svg"
+        src={img("center_mannequin.webp")}
         alt="Pink layered gown on dress form"
-        position={{ top: "52%", topMobile: "20%", left: "50%", transform: true }}
+        position={{ top: "52%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
         height="max-content"
         route="/experience"
@@ -198,7 +211,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Bouquet"
         description="bouquet"
-        src="/images/bouquet.svg"
+        src={img("bouquet.webp")}
         alt="Bouquet"
         position={{ top: "18%", left: "50%", transform: true }}
         width={getResponsiveSize("6%")}
@@ -212,7 +225,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Projects"
         description="Recent collaborations and highlights."
-        src="/images/side_mannequins.svg"
+        src={img("side_mannequins.webp")}
         alt="Two mannequins with gowns"
         position={{ top: "28%", right: "0" }}
         width={getResponsiveSize("25%")}
@@ -225,7 +238,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Services"
         description="Styling, makeup and consultations."
-        src="/images/cabinet.svg"
+        src={img("cabinet.webp")}
         alt="Shelf with jewelry, handbag and heels"
         position={{ top: "27%", right: "23%" }}
         width={getResponsiveSize("9%")}
@@ -238,7 +251,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Contact"
         description="Get in touch for bookings and quotes."
-        src="/images/sofa.svg"
+        src={img("sofa.webp")}
         alt="Sofa with table, flowers, gifts and heels"
         position={{ top: "50%", right: "0" }}
         width={getResponsiveSize("28%")}
@@ -251,7 +264,7 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Testimonials"
         description="Kind words from clients."
-        src="/images/chair.svg"
+        src={img("chair.svg")}
         alt="Sofa corner with cushion"
         position={{ top: "67%", left: "0" }}
         width={getResponsiveSize("13%")}
@@ -264,9 +277,9 @@ const MakeoverRoom: React.FC = () => {
       <ClickableItem
         label="Reveal Treasures"
         description="Discover hidden gems and exclusive offers"
-        src="/images/rug.svg"
+        src={img("rug.svg")}
         alt="Rug with hidden treasures"
-        position={{ top: "91%", topMobile: "80%", left: "50%", transform: true }}
+        position={{ top: "91%", left: "50%", transform: true }}
         width={getResponsiveSize("30%")}
         height="max-content"
         route="/contact"

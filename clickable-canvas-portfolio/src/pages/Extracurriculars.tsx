@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -52,7 +53,7 @@ const Extracurriculars = () => {
     const load = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("/Content/Extracurriculars.json", { cache: "no-store" });
+        const res = await fetch("/Content/Extracurriculars.json");
         if (!res.ok) throw new Error(`Failed to load Extracurriculars.json: ${res.status}`);
         const data: Entry[] = await res.json();
         if (isMounted) setEntries(Array.isArray(data) ? data : []);
@@ -73,7 +74,7 @@ const Extracurriculars = () => {
     = {
     "Writing & Creative Work": {
       label: "Writing & Creative Work",
-      src: "/images/extracurricular_shelf/writing.svg",
+      src: img("extracurricular_shelf/writing.webp"),
       alt: "Writing",
       position: { top: "27%", right: "6%", transform: true },
       width: "12%",
@@ -83,7 +84,7 @@ const Extracurriculars = () => {
     },
     "Chess": {
       label: "Chess",
-      src: "/images/extracurricular_shelf/chess.svg",
+      src: img("extracurricular_shelf/chess.webp"),
       alt: "Chess",
       position: { top: "10%", left: "63%", transform: true },
       width: "12%",
@@ -93,7 +94,7 @@ const Extracurriculars = () => {
     },
     "Basketball": {
       label: "Basketball",
-      src: "/images/extracurricular_shelf/basketball.svg",
+      src: img("extracurricular_shelf/basketball.webp"),
       alt: "Basketball",
       position: { top: "14%", left: "25.5%", transform: true },
       width: "12%",
@@ -103,7 +104,7 @@ const Extracurriculars = () => {
     },
     "Cooking": {
       label: "Cooking",
-      src: "/images/extracurricular_shelf/cooking.svg",
+      src: img("extracurricular_shelf/cooking.webp"),
       alt: "Cooking",
       position: { bottom: "18%", right: "11%", transform: true },
       width: "12%",
@@ -113,7 +114,7 @@ const Extracurriculars = () => {
     },
     "Debate": {
       label: "Debate",
-      src: "/images/extracurricular_shelf/debate.svg",
+      src: img("extracurricular_shelf/debate.webp"),
       alt: "Debate",
       position: { top: "29%", left: "17.5%", transform: true },
       width: "12%",
@@ -123,7 +124,7 @@ const Extracurriculars = () => {
     },
     "Crafts & Creativity": {
       label: "Crafts & Creativity",
-      src: "/images/extracurricular_shelf/crafts.svg",
+      src: img("extracurricular_shelf/crafts.webp"),
       alt: "Crafts",
       position: { top: "45%", right: "6.5%", transform: true },
       width: "13%",
@@ -133,7 +134,7 @@ const Extracurriculars = () => {
     },
     "Travelling": {
       label: "Travel",
-      src: "/images/extracurricular_shelf/travel.svg",
+      src: img("extracurricular_shelf/travel.webp"),
       alt: "Travel",
       position: { top: "25%", left: "46.5%", transform: true },
       width: "11%",
@@ -143,7 +144,7 @@ const Extracurriculars = () => {
     },
     "Hiking": {
       label: "Hiking",
-      src: "/images/extracurricular_shelf/hiking.svg",
+      src: img("extracurricular_shelf/hiking.webp"),
       alt: "Hiking",
       position: { top: "47%", left: "57.5%", transform: true },
       width: "12%",
@@ -153,7 +154,7 @@ const Extracurriculars = () => {
     },
     "Leadership & Social Impact": {
       label: "Leadership & Social Impact",
-      src: "/images/extracurricular_shelf/company.svg",
+      src: img("extracurricular_shelf/company.webp"),
       alt: "Leadership & Social Impact",
       position: { bottom: "32%", left: "19.5%", transform: true },
       width: "13%",
@@ -163,7 +164,7 @@ const Extracurriculars = () => {
     },
     "Achievements & Awards": {
       label: "Achievements & Awards",
-      src: "/images/extracurricular_shelf/trophy.svg",
+      src: img("extracurricular_shelf/trophy.webp"),
       alt: "Achievements & Awards",
       position: { top: "67%", left: "38%", transform: true },
       width: "11%",
@@ -198,7 +199,7 @@ const Extracurriculars = () => {
           <div className="relative flex justify-center mb-12 z-[10] top-[10%] w-full h-full">
             <div className="w-full h-[90%]">
               <img 
-                src="/images/shelf.svg" 
+                src={img("shelf.webp")} 
                 alt="Extracurriculars Page"
                 className="w-full h-[90%]"
               />

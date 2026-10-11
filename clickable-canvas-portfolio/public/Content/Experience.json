@@ -1,7 +1,12 @@
 [
   {
+    "title": "Data Engineering Intern, Marshall Wace (UK)",
+    "content": "Architected an automated data-lineage discovery platform for the data engineering team in London. Built an interactive graph visualisation in React and Mantine on top of a FastAPI backend that orchestrates an end-to-end lineage-extraction pipeline, cutting tracing times from hours to under three seconds across multi-database schemas. Integrated Kerberos-authenticated OAuth, SQL Server temporal tables, Prometheus metrics, and structured logging to improve observability, achieving 100% audit compliance and sub-50 ms diagnostic latency. Implemented an MCP server enabling interactive graph refinement and programmatic AI tool execution across multi-team workflows, automating over 80% of manual query-auditing tasks.",
+    "date": "June – September 2026"
+  },
+  {
     "title": "Application Development Intern, Morgan Stanley (UK)",
-    "content": "Worked on large-scale data migration and simulation projects within the equities technology team. Developed Java-based ETL pipelines to transfer 10B+ equity swap records into Snowflake, improving speed by 20%. Engineered secure connections between on-prem systems and Snowflake, reducing infrastructure load by 15%. Implemented a stochastic trading simulation model to mimic market volatility for more realistic analysis.",
+    "content": "Worked on large-scale data migration and simulation projects within the equities technology team in Glasgow, and received a return offer. Developed Java-based ETL pipelines on Linux using Spring Boot to migrate 10B+ historical equity swap records from legacy databases into Snowflake, reducing processing time by 20%. Engineered database connections between on-premises systems and Snowflake, freeing up 15% capacity in production databases. Implemented a stochastic model to randomise stock values for a trading simulation, to better emulate market volatility.",
     "date": "June – August 2025"
   },
   {
@@ -10,13 +15,13 @@
     "date": "September 2024 – May 2025"
   },
   {
+    "title": "Spring Insight Programs – Maven Securities, Meta, Blackstone, Morgan Stanley, SIG (UK)",
+    "content": "Completed multi-firm technology and finance training in London covering quantitative modelling, high-performance Python/C++ systems, trading infrastructure, and large-scale data analysis. Engaged in high-intensity workshops, live trading simulations, and risk management exercises, and learned about proprietary trading methodologies and the role of technology in modern markets.",
+    "date": "April 2025"
+  },
+  {
     "title": "Website Migration Intern, University of Edinburgh (UK)",
     "content": "Migrated 100+ official university websites to EdWeb2 (Drupal CMS). Built and restructured web pages, fixed JavaScript errors, and debugged HTML inconsistencies. Conducted QA testing for content accuracy, layout consistency, and accessibility compliance. Improved digital experience for 4.5M annual users by ensuring usability and reliability.",
     "date": "May – December 2024"
-  },
-  {
-    "title": "Spring Insight Programs – Maven Securities, Blackstone, SIG, Morgan Stanley (UK)",
-    "content": "Participated in multi-day programs exploring careers in investment management, quantitative trading, and technology in finance. Engaged in high-intensity workshops, live trading simulations, and risk management exercises. Learned about proprietary trading methodologies and the role of technology in modern markets.",
-    "date": "2024–2025"
   }
 ]

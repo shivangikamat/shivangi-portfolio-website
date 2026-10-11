@@ -1,4 +1,5 @@
 import React from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Gift, Sparkles, Star } from "lucide-react";
@@ -27,7 +28,7 @@ const RugPull = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img 
-                  src="/images/rug.svg" 
+                  src={img("rug.svg")} 
                   alt="Rug with hidden treasures"
                   className="w-full rounded-lg shadow-lg"
                 />

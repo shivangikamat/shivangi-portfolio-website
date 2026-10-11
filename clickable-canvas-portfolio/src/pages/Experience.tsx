@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -43,7 +44,7 @@ const Experience = () => {
     const load = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("/Content/Experience.json", { cache: "no-store" });
+        const res = await fetch("/Content/Experience.json");
         if (!res.ok) throw new Error(`Failed to load Experience.json: ${res.status}`);
         const data: ExperienceEntry[] = await res.json();
         if (isMounted) setExperiences(Array.isArray(data) ? data : []);
@@ -63,7 +64,7 @@ const Experience = () => {
   const layout = [
     {
       label: "Black Dress",
-      src: "/images/wardrobe/dress_black.svg",
+      src: img("wardrobe/dress_black.webp"),
       alt: "Black Dress",
       position: { top: "13%", left: "0" } as Position,
       width: "28%",
@@ -71,7 +72,7 @@ const Experience = () => {
     },
     {
       label: "White Dress",
-      src: "/images/wardrobe/dress_white.svg",
+      src: img("wardrobe/dress_white.webp"),
       alt: "White Dress",
       position: { top: "16%", left: "11%" } as Position,
       width: "28%",
@@ -79,7 +80,7 @@ const Experience = () => {
     },
     {
       label: "Grey Coat",
-      src: "/images/wardrobe/coat_grey.svg",
+      src: img("wardrobe/coat_grey.webp"),
       alt: "Grey Coat",
       position: { top: "10%", right: "7.5%" } as Position,
       width: "28%",
@@ -87,7 +88,7 @@ const Experience = () => {
     },
     {
       label: "Blue Coat",
-      src: "/images/wardrobe/coat_blue.svg",
+      src: img("wardrobe/coat_blue.webp"),
       alt: "Blue Coat",
       position: { top: "12%", right: "-1%" } as Position,
       width: "25%",
@@ -144,7 +145,7 @@ const Experience = () => {
       {/* Main Wardrobe Image */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px]">
         <img 
-          src="/images/wardrobe.svg" 
+          src={img("wardrobe.webp")} 
           alt="Wardrobe"
           className="w-full h-auto"
         />

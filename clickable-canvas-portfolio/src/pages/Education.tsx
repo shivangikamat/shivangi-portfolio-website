@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -36,7 +37,7 @@ const Education = () => {
     const load = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch("/Content/Education.json", { cache: "no-store" });
+        const res = await fetch("/Content/Education.json");
         if (!res.ok) throw new Error(`Failed to load Education.json: ${res.status}`);
         const data: EducationEntry[] = await res.json();
         if (isMounted) setEducationEntries(Array.isArray(data) ? data : []);
@@ -126,7 +127,7 @@ const Education = () => {
             <div className="relative flex justify-center mb-12 z-[10] top-[2%] min-w-[65vw] min-h-[50vh] w-full h-full">
               <div className="w-full h-full relative">
                 <img 
-                  src="/images/open-book.svg" 
+                  src={img("open-book.webp")} 
                   alt="Education History"
                   className="w-[120%] h-auto"
                 />
@@ -141,7 +142,7 @@ const Education = () => {
                     <PopupItem
                       key={bookmark.label}
                       label={bookmark.label}
-                      src="/images/bookmark.svg"
+                      src={img("bookmark.svg")}
                       alt="Bookmark"
                       position={bookmark.position}
                       width={bookmark.width}

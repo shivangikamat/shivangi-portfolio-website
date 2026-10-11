@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { img } from "@/lib/images";
 
 interface CurtainLoaderProps {
   children: React.ReactNode;
@@ -8,20 +9,19 @@ interface CurtainLoaderProps {
 
 const CurtainLoader: React.FC<CurtainLoaderProps> = ({ 
   children, 
-  duration = 3500 
+  duration = 1500 
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isAnimating, setIsAnimating] = useState(false);
   const [animationKey, setAnimationKey] = useState(0);
   const location = useLocation();
 
+  // Replay the curtains on first load and on every route change
   useEffect(() => {
-    // Start animation immediately when location changes
     setIsAnimating(true);
     setIsLoading(true);
     setAnimationKey(prev => prev + 1); // Force re-render with new animation
-    
-    // After animation completes, hide the curtains
+
     const timer = setTimeout(() => {
       setIsLoading(false);
       setIsAnimating(false);
@@ -29,20 +29,6 @@ const CurtainLoader: React.FC<CurtainLoaderProps> = ({
 
     return () => clearTimeout(timer);
   }, [location.pathname, duration]);
-
-  // Initial load animation
-  useEffect(() => {
-    setIsAnimating(true);
-    setIsLoading(true);
-    setAnimationKey(prev => prev + 1);
-    
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-      setIsAnimating(false);
-    }, duration);
-    
-    return () => clearTimeout(timer);
-  }, [duration]);
 
   const animationStyle = `
     @keyframes curtainOpen {
@@ -91,7 +77,7 @@ const CurtainLoader: React.FC<CurtainLoaderProps> = ({
             isLoading ? 'animate-[curtainOpen_3s_ease-in-out_forwards]' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: 'url(/images/curtains/left.svg)',
+            backgroundImage: `url(${img("curtains/left.webp")})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transformOrigin: 'left center',
@@ -108,7 +94,7 @@ const CurtainLoader: React.FC<CurtainLoaderProps> = ({
             isLoading ? 'animate-[curtainOpenRight_3s_ease-in-out_forwards]' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: 'url(/images/curtains/right.svg)',
+            backgroundImage: `url(${img("curtains/right.webp")})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             transformOrigin: 'right center',

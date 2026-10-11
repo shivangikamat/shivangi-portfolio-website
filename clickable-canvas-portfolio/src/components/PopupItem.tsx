@@ -66,7 +66,7 @@ const PopupItem: React.FC<PopupItemProps> = ({
         <img
           src={src}
           alt={alt}
-          loading="lazy"
+          decoding="async"
           className={`w-full h-auto select-none pointer-events-none ${!disableDropShadow ? 'drop-shadow-md' : ''} ${flip ? 'scale-x-[-1]' : ''}`}
         />
         <span className="sr-only">{label}</span>

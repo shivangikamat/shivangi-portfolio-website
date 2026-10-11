@@ -83,7 +83,7 @@ const ClickableItem: React.FC<ClickableItemProps> = ({ label, src, alt, position
         <img
           src={src}
           alt={alt}
-          loading="lazy"
+          decoding="async"
           className={`w-full h-auto select-none pointer-events-none ${!disableDropShadow ? 'drop-shadow-md' : ''}`}
         />
         <span className="sr-only">{label}</span>

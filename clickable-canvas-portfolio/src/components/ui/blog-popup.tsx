@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { img } from "@/lib/images";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -83,7 +84,7 @@ const BlogPopup: React.FC<BlogPopupProps> = ({
               
               {/* Right Side - Decorative Hearts */}
               <div className="flex space-x-1 ml-4">
-                <img src="/images/blog-hearts.svg" alt="Hearts" width={80} height={80} />
+                <img src={img("blog-hearts.svg")} alt="Hearts" width={80} height={80} />
               </div>
             </div>
             

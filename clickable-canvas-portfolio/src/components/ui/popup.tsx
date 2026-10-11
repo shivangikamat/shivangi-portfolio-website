@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { img } from "@/lib/images";
 import { X, ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,83 +15,83 @@ interface PopupProps {
 // Predefined image mappings for different folders
 const IMAGE_FOLDERS: Record<string, string[]> = {
   extracurricular_shelf: [
-    "/images/extracurricular_shelf/writing.svg",
-    "/images/extracurricular_shelf/trophy.svg",
-    "/images/extracurricular_shelf/travel.svg",
-    "/images/extracurricular_shelf/hiking.svg",
-    "/images/extracurricular_shelf/debate.svg",
-    "/images/extracurricular_shelf/crafts.svg",
-    "/images/extracurricular_shelf/cooking.svg",
-    "/images/extracurricular_shelf/company.svg",
-    "/images/extracurricular_shelf/chess.svg",
-    "/images/extracurricular_shelf/basketball.svg"
+    img("extracurricular_shelf/writing.webp"),
+    img("extracurricular_shelf/trophy.webp"),
+    img("extracurricular_shelf/travel.webp"),
+    img("extracurricular_shelf/hiking.webp"),
+    img("extracurricular_shelf/debate.webp"),
+    img("extracurricular_shelf/crafts.webp"),
+    img("extracurricular_shelf/cooking.webp"),
+    img("extracurricular_shelf/company.webp"),
+    img("extracurricular_shelf/chess.webp"),
+    img("extracurricular_shelf/basketball.webp")
   ],
   blog: [
-    "/images/blog-page.svg",
-    "/images/blog-icon.svg"
+    img("blog-page.svg"),
+    img("blog-icon.webp")
   ],
   dummy: [
-    "/images/room_bg.svg",
-    "/images/clock.svg",
-    "/images/rug.svg",
-    "/images/chair.svg",
-    "/images/coat_hanger.svg"
+    img("room_bg.svg"),
+    img("clock.svg"),
+    img("rug.svg"),
+    img("chair.svg"),
+    img("coat_hanger.webp")
   ],
   // Extracurriculars galleries
   basketball: [
-    "/images/extracurriculars/basketball/garden.jpeg",
-    "/images/extracurriculars/basketball/IMG_1017.jpeg",
-    "/images/extracurriculars/basketball/IMG_1402.jpeg",
-    "/images/extracurriculars/basketball/IMG_20180810_094954.jpg"
+    img("extracurriculars/basketball/garden.webp"),
+    img("extracurriculars/basketball/IMG_1017.webp"),
+    img("extracurriculars/basketball/IMG_1402.webp"),
+    img("extracurriculars/basketball/IMG_20180810_094954.webp")
   ],
   debate: [
-    "/images/extracurriculars/debate/national_camp.png"
+    img("extracurriculars/debate/national_camp.webp")
   ],
   chess: [
-    "/images/extracurriculars/chess/IMG_9528.jpeg"
+    img("extracurriculars/chess/IMG_9528.webp")
   ],
   leadership: [
-    "/images/extracurriculars/leadership/1.png",
-    "/images/extracurriculars/leadership/2.png",
-    "/images/extracurriculars/leadership/3.png",
-    "/images/extracurriculars/leadership/4.png",
-    "/images/extracurriculars/leadership/5.png"
+    img("extracurriculars/leadership/1.webp"),
+    img("extracurriculars/leadership/2.webp"),
+    img("extracurriculars/leadership/3.webp"),
+    img("extracurriculars/leadership/4.webp"),
+    img("extracurriculars/leadership/5.webp")
   ],
   cooking: [
-    "/images/extracurriculars/cooking/1.png",
-    "/images/extracurriculars/cooking/2.png",
-    "/images/extracurriculars/cooking/3.png",
-    "/images/extracurriculars/cooking/4.png"
+    img("extracurriculars/cooking/1.webp"),
+    img("extracurriculars/cooking/2.webp"),
+    img("extracurriculars/cooking/3.webp"),
+    img("extracurriculars/cooking/4.webp")
   ],
   crafts: [
-    "/images/extracurriculars/crafts/1.png",
-    "/images/extracurriculars/crafts/2.png",
-    "/images/extracurriculars/crafts/3.png"
+    img("extracurriculars/crafts/1.webp"),
+    img("extracurriculars/crafts/2.webp"),
+    img("extracurriculars/crafts/3.webp")
   ],
   hiking: [
-    "/images/extracurriculars/hiking/hiking_1.jpeg"
+    img("extracurriculars/hiking/hiking_1.webp")
   ],
   travelling: [
-    "/images/extracurriculars/travelling/1.png",
-    "/images/extracurriculars/travelling/2.png",
-    "/images/extracurriculars/travelling/3.png",
-    "/images/extracurriculars/travelling/4.png"
+    img("extracurriculars/travelling/1.webp"),
+    img("extracurriculars/travelling/2.webp"),
+    img("extracurriculars/travelling/3.webp"),
+    img("extracurriculars/travelling/4.webp")
   ],
   awards: [
-    "/images/extracurriculars/awards/edinburgh_award.png"
+    img("extracurriculars/awards/edinburgh_award.webp")
   ],
   writing: [],
   jumping_jack: [
-    "/images/projects/jumpingjack/1.png",
-    "/images/projects/jumpingjack/2.png",
+    img("projects/jumpingjack/1.webp"),
+    img("projects/jumpingjack/2.webp"),
   ],
   space_competition: [
-    "/images/projects/spacecompetition/Experiment.png",
-    "/images/projects/spacecompetition/teamSolaris.png",
+    img("projects/spacecompetition/Experiment.webp"),
+    img("projects/spacecompetition/teamSolaris.webp"),
   ],
   ny_academy: [
-    "/images/projects/NewYorkAcademyofSciences/1.png",
-    "/images/projects/NewYorkAcademyofSciences/2.png",
+    img("projects/NewYorkAcademyofSciences/1.webp"),
+    img("projects/NewYorkAcademyofSciences/2.webp"),
   ]
 };
 

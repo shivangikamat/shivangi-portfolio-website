@@ -1,0 +1,21 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.5" cy="40.5" r="39.5" fill="#FFFFFE" stroke="#CEADA2" stroke-width="2"/>
+<circle cx="40.4984" cy="40.4984" r="31.7347" fill="#FFFFFE" stroke="#CEADA2"/>
+<path d="M40.498 11.5703V19.8356" stroke="#CEADA2"/>
+<path d="M39.6719 61.1602V69.4255" stroke="#CEADA2"/>
+<path d="M61.1602 39.6719H69.4255" stroke="#CEADA2"/>
+<path d="M11.5703 39.6719H19.8356" stroke="#CEADA2"/>
+<path d="M55.4023 15.707L51.1454 22.7918" stroke="#CEADA2"/>
+<path d="M29.1543 57.7891L24.8973 64.8738" stroke="#CEADA2"/>
+<path d="M58.6426 50.4375L65.7273 54.6944" stroke="#CEADA2"/>
+<path d="M16.1328 24.8945L23.2176 29.1515" stroke="#CEADA2"/>
+<path d="M65.2656 25.5996L58.1809 29.8566" stroke="#CEADA2"/>
+<path d="M22.332 50.4355L15.2473 54.6925" stroke="#CEADA2"/>
+<path d="M51.8184 57.7891L56.0753 64.8738" stroke="#CEADA2"/>
+<path d="M26.2773 15.2793L30.5343 22.364" stroke="#CEADA2"/>
+<path d="M51.2441 40.0039V38.9019L48.489 39.1774L45.4584 38.9019L39.6727 38.9019V40.0039L45.4584 40.0039L48.489 39.7284L51.2441 40.0039Z" fill="#CEADA2"/>
+<path d="M52.8965 39.4529L51.2434 38.9019V40.0039L52.8965 39.4529Z" fill="#CEADA2"/>
+<path d="M39.0098 26.6543H40.2498L39.9398 29.7545L40.2498 33.1646V39.675H39.0098V33.1646L39.3198 29.7545L39.0098 26.6543Z" fill="#CEADA2"/>
+<path d="M39.6298 24.793L40.2498 26.6531H39.0098L39.6298 24.793Z" fill="#CEADA2"/>
+<circle cx="39.6644" cy="39.6722" r="0.826531" fill="#0D0D0D"/>
+</svg>

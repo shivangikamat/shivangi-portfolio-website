@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -69,7 +70,7 @@ const Blog = () => {
             
             <div className="relative flex justify-center mb-12 z-[10]">
               <img 
-                src="/images/blog-page.svg" 
+                src={img("blog-page.svg")} 
                 alt="Blog Page"
                 className="w-[120%] h-auto max-w-[1000px]"
                 style={{
@@ -83,7 +84,7 @@ const Blog = () => {
                 {/* Row 1 */}
                 <PopupItem
                   label="Blog Post 1"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 1"
                   position={{ top: "30%", left: "20%", transform: true }}
                   width="20%"
@@ -98,7 +99,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 2"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 2"
                   position={{ top: "30%", left: "50%", transform: true }}
                   width="20%"
@@ -113,7 +114,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 3"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 3"
                   position={{ top: "30%", left: "80%", transform: true }}
                   width="20%"
@@ -129,7 +130,7 @@ const Blog = () => {
                 {/* Row 2 */}
                 <PopupItem
                   label="Blog Post 4"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 4"
                   position={{ top: "70%", left: "20%", transform: true }}
                   width="20%"
@@ -144,7 +145,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 5"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 5"
                   position={{ top: "70%", left: "50%", transform: true }}
                   width="20%"
@@ -159,7 +160,7 @@ const Blog = () => {
                 
                 <PopupItem
                   label="Blog Post 6"
-                  src="/images/blog-icon.svg"
+                  src={img("blog-icon.webp")}
                   alt="Blog Icon 6"
                   position={{ top: "70%", left: "80%", transform: true }}
                   width="20%"

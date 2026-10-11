@@ -1,5 +1,25 @@
 [
   {
+    "title": "Before Lean Checks: Candidate Exposure in Proof-Action Ranking (ICML 2026)",
+    "content": "Research paper published at ICML 2026, co-authored with Y. Wang. Formalised proof-state representations and tactic prediction heuristics in Lean 4, analysing proof-action ranking strategies and pre-check candidate exposure on Mathlib 4 theorem verification pipelines.\n\nCode: github.com/shivangikamat/ai-for-theorem-proving",
+    "date": "2026"
+  },
+  {
+    "title": "CS2 Market Pricing Algorithm (Python, Flask, scikit-learn)",
+    "content": "Developed a machine-learning-driven pricing engine for a startup, predicting market manipulation and computing market-adjusted safe prices for digital assets. Engineered an end-to-end ML pipeline integrating data ingestion from the BUFF163 API, feature extraction (rolling volatility, spike detection, mean deviation), and ensemble modelling using SVM, BGMM, and Random Forest.\n\nCode: github.com/shivangikamat/pricing-algorithm",
+    "date": "2025"
+  },
+  {
+    "title": "Citadel Terminal Competition – 6th in Europe (Python)",
+    "content": "Ranked 6th in Europe in the Citadel Terminal Competition by engineering high-performance Python algorithms using adaptive search heuristics, dynamic programming, and state-space pruning under strict execution constraints.\n\nCode: github.com/shivangikamat/Terminal-C1-Europe-2025",
+    "date": "2025"
+  },
+  {
+    "title": "Strain – Multimodal EEG Intelligence Engine (PyTorch, FastAPI, React)",
+    "content": "Engineered an end-to-end ML platform processing 14-channel EEG epoch tensors. Built PyTorch 256-sample sliding-window memory-mapped pipelines, Welch spectral feature extractors, an SSE/stdio MCP server for agentic tool execution, and a 3D WebGL patient dashboard.\n\nCode: github.com/shivangikamat/strain",
+    "date": "2025"
+  },
+  {
     "title": "Jumping Jack – Online Game (Python)",
     "content": "Developed a 2D obstacle-based game in Python where players control a character that must jump and navigate hazards to reach the top of the screen. Implemented smooth character controls and custom game logic with progressively challenging obstacles such as ghosts, demons, and lava. Strengthened skills in Python game development, event-driven programming, and game logic design.",
     "date": "June 2023"

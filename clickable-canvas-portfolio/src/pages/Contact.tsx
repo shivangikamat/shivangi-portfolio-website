@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { img } from "@/lib/images";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle, AlertCircle, User, Linkedin, Instagram } from "lucide-react";
@@ -198,7 +199,7 @@ const Contact = () => {
         {/* Left Side - Telebook with Contact Details */}
         <div className="relative w-[75%] h-[75%]">
           <img 
-            src="/images/contact_page/telebook.svg" 
+            src={img("contact_page/telebook.webp")} 
             alt="Telebook"
             className="w-full h-full object-contain"
           />
@@ -266,7 +267,7 @@ const Contact = () => {
             title="Click to open contact form"
           >
             <img 
-              src="/images/contact_page/telephone.svg" 
+              src={img("contact_page/telephone.webp")} 
               alt="Telephone"
               className="w-full h-full object-contain select-none pointer-events-none"
             />
